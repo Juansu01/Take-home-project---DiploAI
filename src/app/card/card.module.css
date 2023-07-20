@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Inter:wght@200;400&display=swap");
+
 .card {
   border-radius: 28px;
   background: #ece6f0;
@@ -34,13 +36,17 @@
 
 .card-item {
   display: flex;
-  column-gap: 100px;
+  column-gap: 80px;
 }
 
 .card-item-section {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.card-item-section svg {
+  margin-right: 15px;
 }
 
 .card-item-list .card-item:nth-child(-n + 2) {
@@ -51,7 +57,7 @@
   display: flex;
   float: right;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .card-action {
@@ -62,4 +68,31 @@
 .card-action:hover {
   cursor: pointer;
   color: #847ba0;
+}
+
+.card-item-section input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.card-item-section input[type="checkbox"] {
+  accent-color: #6750a4;
+}
+
+.card-item-section p {
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 218.182% */
+  letter-spacing: 0.15px;
+}
+
+.card-item-section h3 {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
 }
