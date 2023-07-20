@@ -42,6 +42,10 @@ export default function Card() {
             </span>
           </div>
         </div>
+        <div className={styles["card-action-section"]}>
+          <span className={styles["card-action"]}>Action 2</span>
+          <span className={styles["card-action"]}>Action 1</span>
+        </div>
       </div>
     </div>
   );
