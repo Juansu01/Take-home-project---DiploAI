@@ -1,9 +1,10 @@
 import styles from "./page.module.css";
+import Card from "./card";
 
-export default function Card() {
+export default function CardRoute() {
   return (
     <main className={styles.main}>
-      <h1>Hello from card</h1>
+      <Card />
     </main>
   );
 }
