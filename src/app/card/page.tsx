@@ -1,10 +1,13 @@
 import styles from "./page.module.css";
-import Card from "./card";
+import Card from "../components/UI/Card";
+import CardContent from "../components/CardContent/CardContent";
 
-export default function CardRoute() {
+export default function CardPage() {
   return (
     <main className={styles.main}>
-      <Card />
+      <Card>
+        <CardContent />
+      </Card>
     </main>
   );
 }
