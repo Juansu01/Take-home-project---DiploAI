@@ -1,8 +1,9 @@
 .form-container {
-  background-color: #ffcba4;
+  background-color: #f89f5b;
   padding: 20px;
   width: 60%;
   height: fit-content;
+  border-radius: 28px;
 }
 
 .form-container form {
