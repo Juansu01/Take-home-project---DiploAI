@@ -1,0 +1,16 @@
+.card-action-section {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card-action {
+  margin: 5px;
+  color: #6750a4;
+}
+
+.card-action:hover {
+  cursor: pointer;
+  color: #847ba0;
+}
