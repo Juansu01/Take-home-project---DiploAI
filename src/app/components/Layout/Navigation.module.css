@@ -37,3 +37,21 @@
 .header a.active {
   color: rgb(205, 239, 248);
 }
+
+@media (max-width: 720px) {
+  .logo {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 500) {
+  .header a {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .header a {
+    font-size: 5vw;
+  }
+}
