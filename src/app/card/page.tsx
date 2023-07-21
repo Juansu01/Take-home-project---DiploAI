@@ -1,13 +1,19 @@
+import { Fragment } from "react";
+
 import styles from "./page.module.css";
 import Card from "../components/UI/Card";
 import CardContent from "../components/CardContent/CardContent";
+import Navigation from "../components/Layout/Navigation";
 
 export default function CardPage() {
   return (
-    <main className={styles.main}>
-      <Card>
-        <CardContent />
-      </Card>
-    </main>
+    <Fragment>
+      <Navigation />
+      <main className={styles.main}>
+        <Card>
+          <CardContent />
+        </Card>
+      </main>
+    </Fragment>
   );
 }
