@@ -1,0 +1,21 @@
+.form-container {
+  background-color: #ffcba4;
+  padding: 20px;
+  width: 60%;
+  height: fit-content;
+}
+
+.form-container form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-container form {
+    max-width: 90%;
+  }
+}
