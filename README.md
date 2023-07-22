@@ -23,3 +23,11 @@ The list is sorted using the following rules:
 - Next JS
 - TypeScript
 - Bootstrap
+
+## Views
+
+- Home View "/":
+  <img src="./readme-media/home-view.png">
+
+- Card View "/card":
+  <img src="./readme-media/card-view.png">
