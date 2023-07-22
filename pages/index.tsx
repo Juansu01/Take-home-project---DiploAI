@@ -10,17 +10,28 @@ import ToDoList from "@/components/ToDo/ToDoList";
 import { ListProps } from "@/types/todo";
 import { fetchToDos } from "@/util/fetchToDos";
 import { sortToDos } from "@/util/sortToDos";
+import styles from "@/components/ToDo/ToDoList.module.css";
 
 export default function Home(props: ListProps) {
   const [toDoList, setToDoList] = useState(props.todos);
   const [userInput, setUserInput] = useState("1");
+  const [isLoading, setIsLoading] = useState(false);
 
   async function submitHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setIsLoading(true);
     const newToDos = await fetchToDos(+userInput);
     sortToDos(newToDos);
+    setIsLoading(false);
     setToDoList(newToDos);
   }
+
+  const toDoListContent = <ToDoList ToDoItems={toDoList} />;
+  const isLoadingContent = (
+    <div className={styles["task-list"]}>
+      <h1>Fetching ToDos...</h1>
+    </div>
+  );
 
   return (
     <Fragment>
@@ -41,7 +52,8 @@ export default function Home(props: ListProps) {
       </section>
       <section className="d-flex justify-content-center pt-5 flex-row">
         <FormContainer>
-          <ToDoList ToDoItems={toDoList} />
+          {isLoading && isLoadingContent}
+          {!isLoading && toDoListContent}
         </FormContainer>
       </section>
     </Fragment>
