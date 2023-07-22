@@ -3,7 +3,7 @@
 }
 body {
   margin: 0;
-  background-color: rgb(133, 133, 133);
+  background-color: rgb(133, 133, 133) !important;
 }
 h1 {
   color: black;
