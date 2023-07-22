@@ -1,4 +1,4 @@
-import styles from "./TaskItem.module.css";
+import styles from "./ToDoItem.module.css";
 import { ToDoItem } from "@/types/todo";
 
 export default function ToDoItem(props: ToDoItem) {
