@@ -4,7 +4,7 @@ import { ToDoListProps } from "@/types/todo";
 
 export default function ToDoList(props: ToDoListProps) {
   return (
-    <div className={`${styles["task-list"]}`}>
+    <div className={styles["task-list"]}>
       {props.ToDoItems.map((toDo) => (
         <ToDoItem
           key={toDo.id}
