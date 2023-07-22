@@ -8,3 +8,7 @@ export interface ToDoItem {
 export type ToDoListProps = {
   ToDoItems: ToDoItem[];
 };
+
+export type ListProps = {
+  todos: ToDoItem[];
+};
