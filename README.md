@@ -10,6 +10,9 @@ This is a pure Next JS application, users can input a number from
 
 ### Solution Details
 
+Server-Side Rendering is implemented inside the "/" route, everytime the server
+gets a request from this route, it will prerender 5 ToDos before sending the response to the client.
+
 The list is sorted using the following rules:
 
 - The incomplete ToDos will be displayed at the top, followed by the completed ToDos
