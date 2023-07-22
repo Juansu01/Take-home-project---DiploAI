@@ -11,7 +11,7 @@ export default function Form(props: FormProps) {
     <form onSubmit={props.onSubmit}>
       <div className={styles["form-controls"]}>
         <div className={styles["form-control"]}>
-          <label className="h1">Amount of todos to fetch</label>
+          <label className="h1">Amount of ToDos to fetch</label>
           <input
             type="number"
             value={props.userInput}
