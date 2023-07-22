@@ -1,0 +1,7 @@
+.task-item {
+  display: grid;
+  grid-template-columns: 30vw 5vw;
+  border: solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
